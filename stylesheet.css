@@ -1,0 +1,368 @@
+/* import variables, mixins */
+/*
+ * common variables
+ */
+/* colors */
+/* font and font-family */
+/* default margin and padding */
+/* border */
+/*
+ * common sass mixins
+ */
+/*
+ * common variables
+ */
+/* colors */
+/* font and font-family */
+/* default margin and padding */
+/* border */
+header {
+  width: 100%;
+  margin: 30px;
+}
+#title
+{
+  display: inline-block;
+  align-items: center;
+}
+
+
+.name
+{
+  opacity: 90%;
+  display: flex;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  padding-top: 0px;
+  text-decoration: none;
+  font-family: 'Didot', serif;
+  font-size: 50px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    colorChange 4s step-end infinite;
+}
+@keyframes colorChange {
+    0%   { color: #e27d60; }
+    20%   { color: 	#85dcb0; }
+    40% { color: #e8a87c; }
+    60%   { color: #c38d9e; }
+    80%   { color: #41b3a3; }
+    100%   { color: #8d8741; }
+}
+@keyframes borderColorChange {
+  0%   { border-color: #e27d60; }
+  20%   { border-color: 	#85dcb0; }
+  40% { border-color: #e8a87c; }
+  60%   { border-color: #c38d9e; }
+  80%   { border-color: #41b3a3; }
+  100%   { border-color: #8d8741; }
+}
+body {
+  margin-top: 30px;
+  background: #e6e5e1;
+  font-family: Spectral;
+  font-style: normal;;
+  color: #575b63;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  letter-spacing: .15em;
+
+}
+.site-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.site-element {
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  width: 100%;
+}
+.inner-content {
+  padding: 20px 20px;
+  border: 8px solid #fff;
+  justify-content: center;
+  -webkit-box-shadow: 0 15px 49px -10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 15px 49px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 49px -10px rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  animation:
+    borderColorChange 4s step-end infinite;
+  background: #e6e5e1;
+
+
+  opacity: 0.95;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.bio {
+  margin-left: 40px;
+  margin-right: 40px;
+  z-index: 0;
+}
+.bioText {
+  letter-spacing: .15em;
+  font-family: 'Didot', serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.buttonContainer
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.buttons{
+  font-size: 20px;
+   color: #575b63;
+   padding:0.46em 1.6em;
+   border: 0.1em solid #575b63;
+   margin: 0 0.2em 0.2em 0;
+   border-radius: 0.12em;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-weight: 300;
+   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+   text-align: center;
+   transition: all 0.15s;
+  }
+  .buttons:hover{
+    text-shadow:0 0 2em rgba(255, 255, 255, 1);
+    border-color: #999999;
+    animation:
+    colorChange 4s steps(40, end),
+    borderColorChange 4s steps(40, end);
+
+
+  }
+  .buttons:active{
+    background-color:#999999;
+  }
+.resume-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: center;
+  align-self: center;
+  align-content: space-between;
+  justify-content: space-around;
+}
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.resume > div {
+  margin: 0 0.2em 0.2em;
+  margin-bottom: 4em;
+  background: transparent;
+  width: 28%;
+  min-width: 200px;
+  height: 100px;
+  border: 8px solid #fff;
+  -webkit-box-shadow: 0 15px 49px -10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 15px 49px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 49px -10px rgba(0, 0, 0, 0.5);
+
+}
+.resumeHeader {
+  color: #575b63;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align: center;
+  font-family: 'Didot', serif;
+  font-size: 25px;
+  margin: 2px;
+}
+.resumeText {
+  color: #575b63;
+  font-family: Spectral;
+  font-style: normal;
+  text-align: left;
+}
+
+.resumeHeader:hover{
+  text-shadow:0 0 2em rgba(255, 255, 255, 1);
+  color: orange;
+  border-color: orange;
+
+}
+
+.flip-card {
+  border: 1px solid #575b63;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side  */
+.flip-card-front {
+  font-family: 'Didot', serif;
+  color: #575b63;
+  width: 100%;
+  margin: auto;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  position: relative;
+}
+
+/* Style the back side */
+.flip-card-back {
+  width: 400px;
+  height: 250px;
+  padding-top: 10px;
+  z-index: 4;
+  position: absolute;
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+  letter-spacing: .05em;
+  border: 1px solid #575b63;
+}
+.red {
+  width: 100%;
+  height:100%;
+  background-color:	#ffadad;
+}
+.yellow {
+  width: 100%;
+  height:100%;
+  background-color:	#f8e9a1;
+}
+.orange {
+  width: 100%;
+  height:100%;
+  background-color:	#ffd6a5;
+}
+.purple {
+  width: 100%;
+  height:100%;
+  background-color:	#ffc6ff;
+}
+.blue {
+  width: 100%;
+  height:100%;
+  background-color:	#b4dfe5;
+}
+.green {
+  width: 100%;
+  height:100%;
+  background-color:	#caffbf;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 10px;
+  margin-bottom: 40px;
+  z-index: 3;
+}
+
+.sliderContainer {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 30px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-26px);
+  -ms-transform: translateX(-26px);
+  transform: translateX(-26px);
+}
