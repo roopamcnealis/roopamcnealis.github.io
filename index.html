@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roopa M. McNealis</title>
+    <title>Roopa Mangalmurti McNealis</title>
     <meta name="description" content="Roopa McNealis' Personal Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,152 +16,186 @@
 
     <!-- inject:css -->
     <link rel="stylesheet" href="redesign.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
     <!-- endinject -->
 
   </head>
-  <body>
+  <body onload="openCity(event, 'Home')">
 
-      <header>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Home')">About Me</button>
+        <button class="tablinks" onclick="openCity(event, 'MS')">Areas of Expertise</button>
+        <button class="tablinks" onclick="openCity(event, 'Recent')">Recent Experience</button>
+        <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
 
-          <div class="top">
-            <div class = "topElement">
-              <p class="title"> Roopa M. McNealis</p>
-              <p class="subtitle"> Roopa discovers value at the intersection of data and people.
-                An experienced strategy and operations executive, her professional experience
-                extends from start-up to larger healthcare/technology/consulting company roles and includes
-                having worked in Europe, India and Silicon Valley. </p>
+      </div>
+
+      <div id="Home" class="tabcontent">
+        <header>
+
+            <div class="top">
+              <div class = "topElement">
+                <p class="title"> Roopa M. <br> McNealis</p>
+                <p class="subtitle"> Roopa discovers value at the intersection of data and people.
+                  An experienced strategy and operations executive, her professional experience
+                  extends from start-up to larger healthcare/technology/consulting company roles and includes
+                  having worked in Europe, India and Silicon Valley. </p>
+              </div>
+              <div class = "topElement">
+                <img class = "biopic" src="pictures/prof.jpg" alt="a picture of me!">
+              </div>
+
             </div>
-            <div class = "topElement">
-              <img class = "biopic" src="pictures/prof.jpg" alt="a picture of me!">
-            </div>
 
+        </header>
+      </div>
+
+      <div id="MS" class="tabcontent">
+        <p class="sectiontitle"> Areas of Expertise</p>
+        <div class = "bio" id="bio">
+          <div class = "bioElement">
+            <h3> Top Skills: </h3>
+            <p id = "skillChange">
+              • Business Strategy <br>
+              • Entrepreneurship <br>
+              • Project Management <br>
+            </p>
+          </div>
+          <div class = "bioElement">
+            <h3> Markets: </h3>
+            <p id = "marketChange">
+              • Healthcare providers <br>
+              • Tech <br>
+              • Biotech <br>
+              • Internet + online services <br>
+              • Online coaching + learning platforms <br>
+            </p>
           </div>
 
-      </header>
-      <div class="next-button" onclick = 'window.location="#bio"'></div>
-
-      <div class = "bio" id="bio">
-        <div class = "bioElement">
-          <p>
-          <img class = "actionpic" src="pictures/action.jpg" alt="a picture of me!">
-          </p>
-        </div>
-        <div class = "bioElement">
-          <p style="margin-top: 100px"> Markets: </p>
-          <p id = "marketChange">
-            Healthcare providers <br>
-            Tech <br>
-            Biotech <br>
-            Internet and online services <br>
-            Online coaching and learning platforms <br>
-          </p>
-          <p style="margin-top: 15px;"> Specialties: </p>
-          <p id = "specChange">
-            Growth strategy <br>
-            New market assessment <br>
-            Market segmentation <br>
-            Product and business planning <br>
-            Business strategy <br>
-            Reporting and analytics <br>
-            Project management <br>
-            Operations and process implementation <br>
-          </p>
-        </div>
-      </div>
-      <div class="next-button" onclick = 'window.location="#timeline"'></div>
-
-
-     <p class="sectiontitle"> Recent Experience </p>
-     <div class="timeline" id="timeline">
-      <div class="container left" style="margin-top:0px">
-        <div class="content">
-          <small class = "date"> July 2016 - Present </small>
-          <h2>Stanford Health Care</h2>
-          <p><em>January 2020 - Present</em></p>
-          <div class="header">Administrative Director, Supply Chain Systems and Analytics</div>
-          <p> Oversee the Master Data Management and Demand Planning functions within
-Supply Chain, responsible for developing and implementing leading supply
-chain technologies, systems and analytics in support of building a best-in-class
-supply chain organization for Stanford Medicine's network of hospitals and
-clinics.</p>
-          <p><em>July 2016 - January 2020</em></p>
-          <div class="header">Director, Clinical and Business Analytics (CBA) Strategic Projects</div>
-          <p> Lead value analytics programs to support hospital operational efficiency and
-improvement goals. Partner with senior business and operations executives
-across the organization on enterprise analytics and dashboards, improvement
-initiatives, data governance, and the selection and management of external
-analytics vendors. </p>
-        </div>
-      </div>
-      <div class="container right">
-        <div class="content">
-          <small class = "date"> July 2014 - June 2016 </small>
-          <h2>Globiana Inc.</h2>
-          <div class="header">Chief Operating Officer</div>
-          <p> Responsible for aligning the technology, product planning, marketing, content
-and customer facing teams to meet the strategic goals of the company.
-Globiana supports mobile employees through a coaching and digital learning
-platform that reduces move-related stress, delivers a better relocation
-experience, and teaches global dexterity skills. </p>
-        </div>
-      </div>
-      <div class="container left">
-        <div class="content">
-          <small class = "date"> April 2014 - December 2015 </small>
-          <h2>Exponential Talent LLC</h2>
-          <div class="header">Leader, Data Analytics and Transformation Management</div>
-          <p> Provide consulting services to helps clients innovate, change and grow to tap
-the full power of today's diverse workforce. Develop and implement metrics
-and accountability frameworks to drive talent strategies and innovations that
-raise employee satisfaction and business performance. Projects include
-gender and diversity strategy, organization development, talent management
-and change/transformation. </p>
-        </div>
-      </div>
-      <div class="container right">
-        <div class="content" style="margin-bottom:40px;">
-          <small class = "date"> 2014 - 2015 </small>
-          <h2>MoveCircles</h2>
-          <div class="header">Founder</div>
-          <p> Create and launch suite of online MoveCircles programs to transform the
-experience of moving to a new place. Members sign up for location and
-interest-specific circles to connect with groups of peers and share real-time
-learnings, experience-based advice, tips and tools. </p>
+          <div class = "bioElement">
+            <h3> Specialties: </h3>
+            <p id = "specChange">
+              • Growth strategy<br>
+              • New market assessment <br>
+              • Market segmentation <br>
+              • Product + business planning <br>
+              • Reporting + analytics <br>
+              • Operations + process implementation <br>
+            </p>
+          </div>
 
         </div>
       </div>
-      </div>
-        <div class="content" style="width:40%; text-align: center; margin:auto; top:0px;">
-          <a href="assets/resume.pdf" download style="color:#6F9AB3;">Download Roopa's resume to see more</a><br>
-        </div>
 
+      <div id="Recent" class="tabcontent">
+        <p class="sectiontitle"> Recent Experience </p>
+        <div class="timeline" id="timeline">
+         <div class="container left" style="margin-top:0px">
+           <div class="content">
+             <small class = "date"> July 2016 - Present </small>
+             <h2>Stanford Health Care</h2>
+             <p><em>January 2020 - Present</em></p>
+             <div class="header">Administrative Director, Supply Chain Systems and Analytics</div>
+             <p> Oversee the Master Data • Project Management and Demand Planning functions within
+   Supply Chain, responsible for developing and implementing leading supply
+   chain technologies, systems and analytics in support of building a best-in-class
+   supply chain organization for Stanford Medicine's network of hospitals and
+   clinics.</p>
+             <p><em>July 2016 - January 2020</em></p>
+             <div class="header">Director, Clinical and Business Analytics (CBA) Strategic Projects</div>
+             <p> Lead value analytics programs to support hospital operational efficiency and
+   improvement goals. Partner with senior business and operations executives
+   across the organization on enterprise analytics and dashboards, improvement
+   initiatives, data governance, and the selection and • Project Management of external
+   analytics vendors. </p>
+           </div>
+         </div>
+         <div class="container right">
+           <div class="content">
+             <small class = "date"> July 2014 - June 2016 </small>
+             <h2>Globiana Inc.</h2>
+             <div class="header">Chief Operating Officer</div>
+             <p> Responsible for aligning the technology, product planning, marketing, content
+   and customer facing teams to meet the strategic goals of the company.
+   Globiana supports mobile employees through a coaching and digital learning
+   platform that reduces move-related stress, delivers a better relocation
+   experience, and teaches global dexterity skills. </p>
+           </div>
+         </div>
+         <div class="container left">
+           <div class="content">
+             <small class = "date"> April 2014 - December 2015 </small>
+             <h2>Exponential Talent LLC</h2>
+             <div class="header">Leader, Data Analytics and Transformation • Project Management</div>
+             <p> Provide consulting services to helps clients innovate, change and grow to tap
+   the full power of today's diverse workforce. Develop and implement metrics
+   and accountability frameworks to drive talent strategies and innovations that
+   raise employee satisfaction and business performance. Projects include
+   gender and diversity strategy, organization development, talent • Project Management
+   and change/transformation. </p>
+           </div>
+         </div>
+         <div class="container right">
+           <div class="content" style="margin-bottom:40px;">
+             <small class = "date"> 2014 - 2015 </small>
+             <h2>MoveCircles</h2>
+             <div class="header">Founder</div>
+             <p> Create and launch suite of online MoveCircles programs to transform the
+   experience of moving to a new place. Members sign up for location and
+   interest-specific circles to connect with groups of peers and share real-time
+   learnings, experience-based advice, tips and tools. </p>
+
+           </div>
+         </div>
+         </div>
+         <div class="content" style="width:40%; text-align: center; margin:auto; top:0px;">
+           <a href="assets/resume.pdf" download style="color:#6F9AB3;">Download Roopa's resume to see more</a><br>
+         </div>
+         <div class = "resume" id = 'resume' style="display:none;">
+          <div class = "res-section" style="width:70%; text-align: center;">
+           <a href="assets/resume.pdf" download style="color:#6F9AB3;">** download resume as a pdf **</a>
+          </div>
+      </div>
+
+     </div>
+
+      <div id="Contact" class="tabcontent">
+        <p class="sectiontitle"> Contact <br> </p>
         <div id = "button-container">
-          <p class="sectiontitle"> Contact <br> </p>
-              <div class="contact">
-                <a href="https://www.linkedin.com/in/roopamcnealis/">
+              <div>
+                <a class="contact" href="https://www.linkedin.com/in/roopamcnealis/">
                   <img class="socialButton" src="pictures/linkedin.png" alt="linkedin">
                 </a>
-                <a href="https://twitter.com/roopamcnealis">
+                <a class="contact" href="https://twitter.com/roopamcnealis">
                   <img class="socialButton" src="pictures/twitter.png" alt="linkedin">
                 </a>
-                <a href="mailto:rmm_public@me.com">
+                <a class="contact" href="mailto:rmm_public@me.com">
                   <img class="socialButton" src="pictures/email.png" alt="linkedin">
                 </a>
               </div>
 
        </div>
-
-     <div class = "resume" id = 'resume' style="display:none;">
-      <div class = "res-section" style="width:70%; text-align: center;">
-       <a href="assets/resume.pdf" download style="color:#6F9AB3;">** download resume as a pdf **</a>
       </div>
-    </div>
+
 
 
 
 
     <script type="text/javascript">
-
+      function openCity(evt, name) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(name).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
       function showResume() {
         var x = document.getElementById('resume');
         if (x.style.display == "none") {
@@ -172,24 +206,32 @@ learnings, experience-based advice, tips and tools. </p>
           window.location="#button-container";
         }
       }
-      let markets = ["<b> Healthcare providers </b> <br> Tech <br> Biotech <br> Internet and online services <br> Online coaching and learning platforms <br>",
-        "Healthcare providers <br> <b> Tech </b> <br> Biotech <br> Internet and online services <br> Online coaching and learning platforms <br>",
-        "Healthcare providers <br> Tech <br> <b> Biotech </b> <br> Internet and online services <br> Online coaching and learning platforms <br>",
-        "Healthcare providers <br> Tech <br> Biotech <br> <b> Internet and online services </b> <br> Online coaching and learning platforms <br>",
-        "Healthcare providers <br> Tech <br> Biotech <br> Internet and online services <br><b> Online coaching and learning platforms  </b><br>"
+      let skills = ["<b> • Business Strategy </b> <br> • Entrepreneurship <br> • Project Management <br>",
+        "• Business Strategy <br> <b> • Entrepreneurship </b> <br> • Project Management <br>",
+        "• Business Strategy <br> • Entrepreneurship <br><b> • Project Management </b><br>",
         ];
-      let specialties = ["<b> Growth strategy </b> <br> New market assessment <br> Market segmentation <br> Product and business planning <br>  Business strategy <br> Reporting and analytics <br> Project management <br> Operations and process implementation <br>",
-      "Growth strategy <br> <b> New market assessment </b> <br> Market segmentation <br> Product and business planning <br>  Business strategy <br> Reporting and analytics <br> Project management <br> Operations and process implementation <br>",
-      "Growth strategy <br> New market assessment <br> <b> Market segmentation </b> <br> Product and business planning <br>  Business strategy <br> Reporting and analytics <br> Project management <br> Operations and process implementation <br>",
-      "Growth strategy <br> New market assessment <br> Market segmentation <br> <b> Product and business planning </b> <br>  Business strategy <br> Reporting and analytics <br> Project management <br> Operations and process implementation <br>",
-      "Growth strategy <br> New market assessment <br> Market segmentation <br> Product and business planning <br> <b> Business strategy  </b><br> Reporting and analytics <br> Project management <br> Operations and process implementation <br>",
-      "Growth strategy <br> New market assessment <br> Market segmentation <br> Product and business planning <br>  Business strategy <br> <b> Reporting and analytics  </b><br> Project management <br> Operations and process implementation <br>",
-      "Growth strategy <br> New market assessment <br> Market segmentation <br> Product and business planning <br>  Business strategy <br> Reporting and analytics <br> <b> Project management  </b><br> Operations and process implementation <br>",
-      "Growth strategy <br> New market assessment <br> Market segmentation <br> Product and business planning <br>  Business strategy <br> Reporting and analytics <br> Project management <br> <b> Operations and process implementation </b><br>"];
-
+      let markets = ["<b> • Healthcare providers </b> <br> • Tech <br> • Biotech <br> • Internet + online services <br> • Online coaching + learning platforms <br>",
+        "• Healthcare providers <br> <b> • Tech </b> <br> • Biotech <br> • Internet + online services <br> • Online coaching + learning platforms <br>",
+        "• Healthcare providers <br> • Tech <br> <b> • Biotech </b> <br> • Internet + online services <br> • Online coaching + learning platforms <br>",
+        "• Healthcare providers <br> • Tech <br> • Biotech <br> <b> • Internet + online services </b> <br> • Online coaching + learning platforms <br>",
+        "• Healthcare providers <br> • Tech <br> • Biotech <br> • Internet + online services <br><b> • Online coaching + learning platforms  </b><br>"
+        ];
+      let specialties = ["<b> • Growth strategy</b> <br> • New market assessment <br> • Market segmentation <br> • Product + business planning <br> • Reporting + analytics <br> • Operations + process implementation <br>",
+      "• Growth strategy<br> <b> • New market assessment </b> <br> • Market segmentation <br> • Product + business planning <br> • Reporting + analytics <br> • Operations + process implementation <br>",
+      "• Growth strategy<br> • New market assessment <br> <b> • Market segmentation </b> <br> • Product + business planning <br> • Reporting + analytics <br> • Operations + process implementation <br>",
+      "• Growth strategy<br> • New market assessment <br> • Market segmentation <br> <b> • Product + business planning </b> <br> • Reporting + analytics <br> • Operations + process implementation <br>",
+      "• Growth strategy<br> • New market assessment <br> • Market segmentation <br> • Product + business planning <br> <b> • Reporting + analytics  </b><br> • Operations + process implementation <br>",
+      "• Growth strategy<br> • New market assessment <br> • Market segmentation <br> • Product + business planning <br> • Reporting + analytics <br> <b> • Operations + process implementation </b><br>"];
+      let counterK = 0;
       let counterM = 0;
       let counterS = 0;
       function change() {
+        document.getElementById("skillChange").innerHTML = skills[counterK];
+        counterK++;
+        if (counterK >= skills.length) {
+          counterK = 0;
+        }
+
         document.getElementById("marketChange").innerHTML = markets[counterM];
         counterM++;
         if (counterM >= markets.length) {
@@ -203,6 +245,7 @@ learnings, experience-based advice, tips and tools. </p>
       }
       setInterval(change, 1500);
       hideCursor();
-    </script>
+
+  </script>
   </body>
 </html>
